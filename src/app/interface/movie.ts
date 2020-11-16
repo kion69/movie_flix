@@ -4,5 +4,5 @@ export interface Movie {
     openingCrawl: string;
     director: string;
     producer: string;
-    releaseDate: Date;
+    release_date: Date;
 }

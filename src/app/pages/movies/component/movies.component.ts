@@ -23,9 +23,6 @@ export class MoviesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getMovies();
-    this.imageList = [
-      { id: 4, imageSrc: '../../../../assets/image/nova_esperança.png' }
-    ];
   }
 
   getMovies(): void {
@@ -33,7 +30,7 @@ export class MoviesComponent implements OnInit {
     this.loadingRef = this.viewContainerRef.createComponent(factory);
 
     this.httpService.get().subscribe(response => {
-      const result: [] = response.results.sort((a: any, b: any) => a.episode_id - b.episode_id);
+      const result: [] = response.results.sort((a: Movie, b: Movie) => a.release_date > b.release_date);
       this.loadingRef.destroy();
       this.moviesList = result;
     });

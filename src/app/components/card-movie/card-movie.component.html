@@ -12,7 +12,7 @@
         <br />
         <span>Produtor: {{movie.producer}}</span>
         <br />
-        <span>Data de lançamento:</span>
+        <span>Data de lançamento: {{movie.release_date | date: 'dd/MM/YYYY'}}</span>
       </div>
       <div class="uk-card-footer footer-action">
         <span uk-icon="star" uk-tooltip="title: Avaliar; delay: 500"></span>
