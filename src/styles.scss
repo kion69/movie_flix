@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+// @import 'assets/scss/font.scss';
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body * {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #FFC145;
+  min-height: 100vh;
+}
+
+/* SCSS HEX */
+$rhythm: #8484aeff;
+$dark-blue-gray: #5b5f97ff;
+$maximum-yellow-red: #ffc145ff;
+$baby-powder: #fffffbff;
+$light-coral: #ff6b6cff;
+$xiketic: #170312ff;
+
+/* SCSS HSL */
+$rhythm: hsla(240, 21%, 60%, 1);
+$dark-blue-gray: hsla(236, 25%, 47%, 1);
+$maximum-yellow-red: hsla(40, 100%, 64%, 1);
+$baby-powder: hsla(60, 100%, 99%, 1);
+$light-coral: hsla(360, 100%, 71%, 1);
+$xiketic: hsla(315, 77%, 5%, 1);
+
+/* SCSS RGB */
+$rhythm: rgba(132, 132, 174, 1);
+$dark-blue-gray: rgba(91, 95, 151, 1);
+$maximum-yellow-red: rgba(255, 193, 69, 1);
+$baby-powder: rgba(255, 255, 251, 1);
+$light-coral: rgba(255, 107, 108, 1);
+$xiketic: rgba(23, 3, 18, 1);

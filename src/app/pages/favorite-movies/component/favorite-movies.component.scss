@@ -1,0 +1,15 @@
+@import '../../../../styles.scss';
+
+.saved-movies {
+  bottom: 25px;
+  right: 25px;
+  width: 400px;
+  position: fixed;
+  pointer-events: none;
+  content: url('../../../../assets/image/undraw_my_files_swob.svg');
+}
+
+.how-to-save {
+  margin: 24px;
+  color: $xiketic
+}

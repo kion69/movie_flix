@@ -1,0 +1,98 @@
+@import '../../../styles.scss';
+
+$textColor: $baby-powder;
+
+span[uk-icon] {
+  cursor: pointer;
+}
+
+.movie-container {
+  opacity: 0;
+  height: 100%;
+  transition: background-color, 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .uk-card-media-top {
+    align-self: center;
+  }
+
+  .card-play-movie {
+    color: $textColor;
+    font-weight: bold;
+    align-self: center;
+
+    &:hover {
+      color: $xiketic;
+    }
+  }
+
+  .uk-card-title,
+  .uk-card-body {
+    padding: 25px;
+    color: $textColor;
+    font-weight: bold;
+
+    .movie-description {
+      padding: 15px 0;
+    }
+
+
+    .uk-card-footer {
+      padding: 0;
+    }
+  }
+}
+
+.card-movie {
+  cursor: default;
+  width: 300px;
+  height: 450px;
+  background-color: $baby-powder;
+  margin: 24px;
+  background-image: url('../../../assets/image/nova_esperança.png');
+  background-size: cover;
+
+  &:hover {
+    .movie-container {
+      opacity: 1;
+      background-color: rgba($color: $dark-blue-gray, $alpha: 0.7);
+    }
+  }
+}
+
+.uk-card-default.uk-card-hover:hover {
+  background-color: #fffffb;
+  cursor: pointer;
+}
+
+.uk-card-footer {
+  border: 0;
+
+  &.footer-action {
+    display: flex;
+    justify-content: flex-end;
+
+    span {
+      padding: 0 8px;
+    }
+  }
+}
+
+
+.more-options {
+  color: $xiketic;
+  padding: 0px;
+  cursor: pointer;
+
+  li {
+
+    padding: 5px;
+
+    &:hover {
+      background-color: $rhythm;
+      color: $baby-powder;
+    }
+  }
+}

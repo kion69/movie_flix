@@ -1,0 +1,34 @@
+<div class="card-movie uk-card uk-card-default">
+  <div class="movie-container">
+    <div class="uk-card-media-top">
+      <h3 class="uk-card-title"> {{movie.title}}</h3>
+    </div>
+    <div class="card-play-movie">
+      <span uk-icon="icon: play-circle; ratio: 5" uk-tooltip="title: Reproduzir; delay: 500"></span>
+    </div>
+    <div class="uk-card-body">
+      <div class="movie-description">
+        <span>Diretor: {{movie.director}}</span>
+        <br />
+        <span>Produtor: {{movie.producer}}</span>
+        <br />
+        <span>Data de lançamento:</span>
+      </div>
+      <div class="uk-card-footer footer-action">
+        <span uk-icon="star" uk-tooltip="title: Avaliar; delay: 500"></span>
+        <span uk-icon="heart" uk-tooltip="title: Adicionar aos favoritos; delay: 500"></span>
+        <span uk-icon="more-vertical" uk-tooltip="title: Mais opções; delay: 500"></span>
+        <div class="more-options" uk-dropdown="mode: click">
+          <ul class="uk-nav uk-dropdown-nav">
+            <li>
+              <span uk-icon="plus"></span> Próximo na lista
+            </li>
+            <li>
+              <span uk-icon="warning"></span>Reportar um problema
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

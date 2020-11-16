@@ -1,0 +1,21 @@
+<div class="container">
+  <a class="man-seated"></a>
+
+  <div class="movie-message">
+    Aqui vai algumas dicas para aproveitar ainda mais seu cineminha: 
+    <ul style="list-style: decimal;">
+      <li>Escolha um filme</li>
+      <li>Chame a galera</li>
+      <li>Prepare a pipoca</li>
+      <li>E aproveite <span uk-icon="happy"></span></li>
+    </ul>   
+  </div>
+
+  <div class="card-container">
+    <div *ngFor="let movie of moviesList">
+      <div>
+        <app-card-movie [movie]="movie"></app-card-movie>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+@import '../../../../styles.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 24px;
+  }
+
+  .man-seated {
+    bottom: 25px;
+    right: 25px;
+    width: 400px;
+    position: fixed;
+    pointer-events: none;
+    content: url('../../../../assets/image/undraw_home_cinema_l7yl.svg');
+  }
+
+  @media screen and (max-width: 712px) {
+
+    .card-container {
+      margin: auto;
+      padding: 24px;
+    }
+  }
+}
+
+
+.movie-message {
+  margin: 24px 24px 0;
+  color: $xiketic;
+  font-weight: bold;
+}
+
+.uk-open>.uk-modal-dialog {
+  background-color: red;
+}
