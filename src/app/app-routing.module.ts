@@ -10,6 +10,11 @@ const routes: Routes = [
     path: 'favoritos',
     loadChildren: () => import('./pages/favorite-movies/favorite-movies.module').then(m => m.FavoriteMoviesModule)
   },
+  {
+    path: '',
+    redirectTo: '/filmes',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
